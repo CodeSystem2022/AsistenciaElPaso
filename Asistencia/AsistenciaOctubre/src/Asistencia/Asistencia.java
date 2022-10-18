@@ -7,5 +7,10 @@ package Asistencia;
 
 
 public class Asistencia {
+    public static void main(String[] args) {
+        
+        
+        // ASISTENCIA MES OCTUBRE
+    }
     
 }
