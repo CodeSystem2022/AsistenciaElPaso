@@ -16,7 +16,7 @@ public class Asistencia {
         
         /*
         Ejercicio 11: Diseñar un programa que muestre el producto de los 10 primeros numero impares.
-        Hacerlo con JOptionPane
+        Hacerlo con JOptionPane.
          */
         
         int i, producto = 1;
