@@ -140,3 +140,33 @@ public class PersonaPrueba {
         
     }
 }
+/*
+    Asistencia Gonzalo Tapia por el mes de Octubre!!!
+ */
+package Ciclos05;
+
+import javax.swing.JOptionPane;
+
+
+public class Ejercicio05 {
+    public static void main(String[] args) {
+        
+        int numero ,aleatorio, conteo = 0 ;
+        aleatorio = (int)(Math.random()*100);
+        
+        do{
+            numero= Integer.parseInt(JOptionPane.showInputDialog("Digite un num: "));
+            if(numero <aleatorio){
+                JOptionPane.showMessageDialog(null, "El numero mayor ");
+            }
+            else if(numero > aleatorio){
+                JOptionPane.showMessageDialog(null, "El numero menor ");
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Felicitaciones es el num correcto");
+            }
+            conteo ++;
+        }while(numero != aleatorio);
+        JOptionPane.showMessageDialog(null, "Adivinaste en "+conteo+" intentos");
+    }
+}
