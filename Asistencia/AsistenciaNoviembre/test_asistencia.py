@@ -1,4 +1,4 @@
-from Asistencia import*
+from AsistenciaDenisMembrive import*
 
 '''
 ESTA ES LA ASISTENCIA DEL GRUPO EL PASO
