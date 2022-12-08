@@ -73,3 +73,33 @@ if __name__ == '__main__':  # Solo será visible si la prueba se ejecuta desde a
     print(producto1)
     producto2 = Producto('Pantalon', 150.00)
     print(producto2)
+
+    
+# PABLO PEREZ
+# EJERCICIO CLASE PADRE, CLASE RATON.
+
+# Creamos clase Padre
+class DispositivoEntrada:
+    def __init__(self, marca, tipo_entrada):
+        self._marca = marca
+        self._tipo_entrada = tipo_entrada
+
+# Creamos clase Raton
+class Raton(DispositivoEntrada):
+# Creamos variable para contabilizar.
+    contador_ratones = 0
+# Creamos metodo dunder init
+    def __init__(self, marca, tipo_entrada):
+        Raton.contador_ratones += 1
+        self._id_raton = Raton.contador_ratones
+        super().__init__(marca, tipo_entrada)
+# Creamos metodo str
+    def __str__(self):
+        return f'ID: {self._id_raton}, Marca: {self._marca}, Tipo Entrada: {self._tipo_entrada}'
+
+# Hacemos pruebas
+if __name__ == '__main__':
+    raton1 = Raton('HP', 'USB')
+    print(raton1)
+    raton2 = Raton('Acer', 'Bluetooth')
+    print(raton2)
